@@ -7,7 +7,7 @@ Research project investigating whether validated, grounded IoT instruction-respo
 **Hardware:** NVIDIA Tesla T4  
 **Project rubric:** Project 7 — Domain-Specific Instruction-Tuning Dataset Curation Framework.
 
-> **Research status:** Core training and evaluation runs have been completed and their artifacts archived. This repository is the documentation baseline. Some reproduction components and human-review requirements remain open; see [limitations](docs/limitations.md) and [project status](docs/project_status.md).
+> **Research status:** Core training and evaluation runs have been completed and their artifacts archived. This repository is the documentation baseline. The dataset-level human review has two completed 30-example batches; independent review of unanswerable-response labels and exact end-to-end inference reproduction remain open. See [human review](docs/human_review_summary.md), [limitations](docs/limitations.md), and [project status](docs/project_status.md).
 
 ## Research question
 
@@ -100,3 +100,8 @@ Large datasets and adapter archives are not included in this initial documentati
 ## Main interpretation
 
 The evidence shows that domain fine-tuning changes task performance, but does not establish that filtering improved results over the reconstructed unfiltered candidate pool. B3 led structured extraction; B4 led summarization; B1 remained competitive on QA. B5 achieved the highest MMLU subset accuracy among the three evaluated models, but the paired test did not establish a statistically significant difference.
+
+
+## Implementation source code and human review
+
+The recovered source scripts are indexed in [Script Catalog](docs/script_catalog.md) and [Dataset Pipeline Architecture](docs/pipeline_architecture.md). Dataset fingerprints are in [Dataset Provenance](docs/dataset_provenance.md). Two distinct human-review batches are summarized in [Human Review Summary](docs/human_review_summary.md). Raw review CSVs and source evidence excerpts are not published until redistribution rights are checked.

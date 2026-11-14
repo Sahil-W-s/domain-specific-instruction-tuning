@@ -1,0 +1,43 @@
+{
+  "source_of_summary": "Reviewed CSV files supplied during this conversation; raw evidence excerpts are not published.",
+  "audits": [
+    {
+      "audit_id": "original_dataset_v0_initial_review",
+      "sample_size": 30,
+      "dataset_version": "original_dataset_v0",
+      "decisions": {
+        "ACCEPT": 29,
+        "REJECT": 1
+      },
+      "acceptance_rate": 0.9666666666666667,
+      "rejection_rate": 0.03333333333333333,
+      "all_decisions_and_reviewer_notes_present": true,
+      "rejected_reason_summary": [
+        "near-duplicate example"
+      ],
+      "source_file": "human_audit_30_finalized.csv"
+    },
+    {
+      "audit_id": "followup_final_candidate_pool_review",
+      "sample_size": 30,
+      "source_composition": {
+        "previously_validated": 6,
+        "v2": 24
+      },
+      "decisions": {
+        "ACCEPT": 28,
+        "REJECT": 2
+      },
+      "acceptance_rate": 0.9333333333333333,
+      "rejection_rate": 0.06666666666666667,
+      "all_decisions_and_reviewer_notes_present": true,
+      "rejected_reason_summary": [
+        "An additional TCP-connection claim was not explicitly supported by the selected evidence.",
+        "The instruction was declarative rather than an actionable question and the response repeated it."
+      ],
+      "source_file": "final_human_audit_30_completed.csv"
+    }
+  ],
+  "interpretation": "Separate audit batches from different stages; do not pool. Percentages are within-sample proportions, not automatically unbiased whole-dataset estimates.",
+  "raw_review_rows_publication": "Excluded from repository pending source-document redistribution review."
+}
