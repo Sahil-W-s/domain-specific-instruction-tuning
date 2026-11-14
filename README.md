@@ -93,6 +93,10 @@ Historical environment: PyTorch 2.11.0+cu130, Transformers 5.20.2, PEFT 0.21.2, 
 - [Limitations](docs/limitations.md)
 - [Project status and remaining work](docs/project_status.md)
 
+## Environment setup
+
+See [Environment Setup](docs/environment_setup.md). Install the training and curation dependency profiles separately. API keys belong in a local `.env` file copied from `.env.example`; never commit credentials.
+
 ## Data, models, and licensing
 
 Large datasets and adapter archives are not included in this initial documentation commit. Review source-document, dataset, and model redistribution terms before publishing any data or weights. The base model weights are external and are not part of the experiment archive. See [reproducibility notes](docs/reproducibility.md).

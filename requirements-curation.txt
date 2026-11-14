@@ -1,0 +1,9 @@
+# Dataset preparation, generation, and judge pipeline dependencies.
+# Versions for all curation packages were not captured in the final experiment archive.
+transformers==5.20.2
+datasets==4.8.5
+pydantic
+openai
+requests
+python-dotenv
+tqdm

@@ -1,0 +1,8 @@
+# Historical Kaggle training stack (recorded in run environment).
+# Install the PyTorch CUDA wheel appropriate for your machine separately first.
+transformers==5.20.2
+peft==0.21.2
+accelerate==1.15.0
+datasets==4.8.5
+bitsandbytes==0.50.2
+numpy
