@@ -88,6 +88,7 @@ Historical environment: PyTorch 2.11.0+cu130, Transformers 5.20.2, PEFT 0.21.2, 
 ## Repository guide
 
 - [Methodology](docs/research_methodology.md)
+- [Baseline design and comparison logic](docs/baseline_design.md)
 - [Results and analysis](docs/results_and_analysis.md)
 - [Reproducibility](docs/reproducibility.md)
 - [Limitations](docs/limitations.md)

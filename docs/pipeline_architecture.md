@@ -1,5 +1,25 @@
 # Dataset Pipeline Architecture
 
+## End-to-end architecture
+
+```mermaid
+flowchart TD
+    A["Allowed IoT source documents"] --> B["Semantic chunking"]
+    B --> C["Grounded instruction generation"]
+    C --> D["Schema and evidence audits"]
+    D --> E["Heuristic filtering and dedup review"]
+    E --> F["Cross-model LLM judge"]
+    F --> G["Evidence repair and reconciliation"]
+    G --> H["Human ACCEPT / REJECT review"]
+    H --> I["Frozen, versioned JSONL datasets"]
+    I --> J["Train/validation split"]
+    J --> K["QLoRA B2–B5"]
+    K --> L["IoT held-out evaluation B0–B5"]
+    K --> M["MMLU retention evaluation B0/B4/B5"]
+    L --> N["Aggregate metrics and analysis"]
+    M --> N
+```
+
 ## Workflow
 
 1. Source ingestion and semantic chunking with stable chunk identifiers.
