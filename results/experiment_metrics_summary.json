@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0",
+  "source": "Frozen IoT CP reproducibility package and recorded evaluation outputs",
+  "warning": "Aggregate results only. The raw per-example prediction files remain in the private/local archive pending data and source licensing review.",
+  "iot_heldout": {
+    "test_size": 35,
+    "task_counts": {
+      "qa": 12,
+      "extraction": 8,
+      "summarization": 5,
+      "unanswerable": 5,
+      "classification": 5
+    },
+    "answerable_items_per_baseline": 30,
+    "initial_metrics_note": "Initial extraction exact match is strict normalized string EM and is sensitive to JSON formatting. Use the structured extraction evaluation for extraction interpretation.",
+    "baselines": {
+      "B0": {
+        "extraction_initial_em": {
+          "correct": 0,
+          "total": 8,
+          "percentage": 0
+        },
+        "summarization_token_f1": {
+          "mean": 0.43025427999957777,
+          "percentage": 43.02542799995778,
+          "n": 5
+        },
+        "qa_token_f1": {
+          "mean": 0.23989846522801817,
+          "percentage": 23.989846522801816,
+          "n": 12
+        },
+        "classification_em": {
+          "correct": 1,
+          "total": 5,
+          "percentage": 20
+        }
+      },
+      "B1": {
+        "extraction_initial_em": {
+          "correct": 0,
+          "total": 8,
+          "percentage": 0
+        },
+        "summarization_token_f1": {
+          "mean": 0.47018146960279983,
+          "percentage": 47.018146960279985,
+          "n": 5
+        },
+        "qa_token_f1": {
+          "mean": 0.5995399462235913,
+          "percentage": 59.95399462235913,
+          "n": 12
+        },
+        "classification_em": {
+          "correct": 3,
+          "total": 5,
+          "percentage": 60
+        }
+      },
+      "B2": {
+        "extraction_initial_em": {
+          "correct": 0,
+          "total": 8,
+          "percentage": 0
+        },
+        "summarization_token_f1": {
+          "mean": 0.315532667253532,
+          "percentage": 31.5532667253532,
+          "n": 5
+        },
+        "qa_token_f1": {
+          "mean": 0.5215009490183738,
+          "percentage": 52.150094901837384,
+          "n": 12
+        },
+        "classification_em": {
+          "correct": 5,
+          "total": 5,
+          "percentage": 100
+        }
+      },
+      "B3": {
+        "extraction_initial_em": {
+          "correct": 4,
+          "total": 8,
+          "percentage": 50
+        },
+        "summarization_token_f1": {
+          "mean": 0.5142222797173396,
+          "percentage": 51.42222797173396,
+          "n": 5
+        },
+        "qa_token_f1": {
+          "mean": 0.5924986673925311,
+          "percentage": 59.24986673925311,
+          "n": 12
+        },
+        "classification_em": {
+          "correct": 5,
+          "total": 5,
+          "percentage": 100
+        }
+      },
+      "B4": {
+        "extraction_initial_em": {
+          "correct": 3,
+          "total": 8,
+          "percentage": 37.5
+        },
+        "summarization_token_f1": {
+          "mean": 0.5223410848891132,
+          "percentage": 52.234108488911325,
+          "n": 5
+        },
+        "qa_token_f1": {
+          "mean": 0.590201928622953,
+          "percentage": 59.020192862295296,
+          "n": 12
+        },
+        "classification_em": {
+          "correct": 2,
+          "total": 5,
+          "percentage": 40
+        }
+      },
+      "B5": {
+        "extraction_initial_em": {
+          "correct": 3,
+          "total": 8,
+          "percentage": 37.5
+        },
+        "summarization_token_f1": {
+          "mean": 0.49486805746314017,
+          "percentage": 49.48680574631402,
+          "n": 5
+        },
+        "qa_token_f1": {
+          "mean": 0.5606134846414325,
+          "percentage": 56.061348464143244,
+          "n": 12
+        },
+        "classification_em": {
+          "correct": 4,
+          "total": 5,
+          "percentage": 80
+        }
+      }
+    },
+    "heldout_sha256": "70d07aa68b4e125dd573ba01367f059b550651e5e25d4e271e92f55f04c6ff5d"
+  },
+  "extraction_structured": {
+    "n": 8,
+    "matching": "JSON parse; normalized structured exact match; element-level exact normalized (path,value) pair matching. Not semantic similarity.",
+    "baselines": {
+      "B0": {
+        "json_parse_success": {
+          "correct": 8,
+          "total": 8
+        },
+        "structured_em_percentage": 37.5,
+        "element_precision_percentage": 63.33,
+        "element_recall_percentage": 63.93,
+        "element_f1_percentage": 62.92
+      },
+      "B1": {
+        "json_parse_success": {
+          "correct": 8,
+          "total": 8
+        },
+        "structured_em_percentage": 37.5,
+        "element_precision_percentage": 65,
+        "element_recall_percentage": 65.71,
+        "element_f1_percentage": 65.15
+      },
+      "B2": {
+        "json_parse_success": {
+          "correct": 8,
+          "total": 8
+        },
+        "structured_em_percentage": 37.5,
+        "element_precision_percentage": 54.58,
+        "element_recall_percentage": 57.08,
+        "element_f1_percentage": 55.69
+      },
+      "B3": {
+        "json_parse_success": {
+          "correct": 8,
+          "total": 8
+        },
+        "structured_em_percentage": 50,
+        "element_precision_percentage": 67.5,
+        "element_recall_percentage": 70,
+        "element_f1_percentage": 68.61
+      },
+      "B4": {
+        "json_parse_success": {
+          "correct": 7,
+          "total": 8
+        },
+        "structured_em_percentage": 37.5,
+        "element_precision_percentage": 58.21,
+        "element_recall_percentage": 60.71,
+        "element_f1_percentage": 59.33
+      },
+      "B5": {
+        "json_parse_success": {
+          "correct": 8,
+          "total": 8
+        },
+        "structured_em_percentage": 37.5,
+        "element_precision_percentage": 62.92,
+        "element_recall_percentage": 65.42,
+        "element_f1_percentage": 64.03
+      }
+    }
+  },
+  "general_retention": {
+    "dataset": "cais/mmlu",
+    "split": "test",
+    "n": 50,
+    "seed": 42,
+    "category_counts": {
+      "STEM": 13,
+      "Humanities": 12,
+      "Social sciences": 13,
+      "Professional and applied": 12
+    },
+    "subset_sha256": "d7c4f24f3ea17f698b0729093ef601cbdf1ecea53623e62844faa4013f2bf78e",
+    "evaluated_baselines": {
+      "B0": {
+        "correct": 31,
+        "total": 50,
+        "accuracy_percentage": 62
+      },
+      "B4": {
+        "correct": 27,
+        "total": 50,
+        "accuracy_percentage": 54
+      },
+      "B5": {
+        "correct": 33,
+        "total": 50,
+        "accuracy_percentage": 66
+      }
+    },
+    "category_accuracy_percentage": {
+      "Humanities": {
+        "B0": 66.7,
+        "B4": 58.3,
+        "B5": 58.3
+      },
+      "Professional and applied": {
+        "B0": 58.3,
+        "B4": 33.3,
+        "B5": 66.7
+      },
+      "STEM": {
+        "B0": 61.5,
+        "B4": 53.8,
+        "B5": 69.2
+      },
+      "Social sciences": {
+        "B0": 61.5,
+        "B4": 69.2,
+        "B5": 69.2
+      }
+    },
+    "paired_exact_mcnemar": [
+      {
+        "comparison": "B0_vs_B4",
+        "first_only_correct": 5,
+        "second_only_correct": 1,
+        "p_value": 0.2188
+      },
+      {
+        "comparison": "B0_vs_B5",
+        "first_only_correct": 3,
+        "second_only_correct": 5,
+        "p_value": 0.7266
+      },
+      {
+        "comparison": "B4_vs_B5",
+        "first_only_correct": 1,
+        "second_only_correct": 7,
+        "p_value": 0.0703
+      }
+    ],
+    "interpretation": "No comparison reached p<0.05. These 50-question results are descriptive."
+  },
+  "unanswerable_preliminary": {
+    "assessment_type": "preliminary_manual",
+    "questions_per_baseline": 5,
+    "total_responses": 30,
+    "pooled": {
+      "unsupported_or_hallucinated": 25,
+      "safe_abstention": 3,
+      "grounded_but_incomplete": 2,
+      "unsupported_rate_percentage": 83.33333333333334
+    },
+    "per_baseline": {
+      "B0": {
+        "unsupported_or_hallucinated": 5,
+        "safe_abstention": 0,
+        "grounded_but_incomplete": 0
+      },
+      "B1": {
+        "unsupported_or_hallucinated": 3,
+        "safe_abstention": 2,
+        "grounded_but_incomplete": 0
+      },
+      "B2": {
+        "unsupported_or_hallucinated": 4,
+        "safe_abstention": 0,
+        "grounded_but_incomplete": 1
+      },
+      "B3": {
+        "unsupported_or_hallucinated": 4,
+        "safe_abstention": 1,
+        "grounded_but_incomplete": 0
+      },
+      "B4": {
+        "unsupported_or_hallucinated": 4,
+        "safe_abstention": 0,
+        "grounded_but_incomplete": 1
+      },
+      "B5": {
+        "unsupported_or_hallucinated": 5,
+        "safe_abstention": 0,
+        "grounded_but_incomplete": 0
+      }
+    },
+    "caveat": "Preliminary labels; independent human review required before claiming a validated hallucination rate."
+  },
+  "training_runs": {
+    "configuration": {
+      "epochs": 3,
+      "learning_rate": 0.0002,
+      "seed": 42,
+      "compute": "FP16",
+      "quantization": "4-bit NF4 with double quantization",
+      "lora_rank": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "gradient_accumulation_steps": 8,
+      "max_sequence_length": 3072,
+      "optimizer": "paged_adamw_8bit"
+    },
+    "baselines": {
+      "B2": {
+        "train_records": 900,
+        "validation_records": 100,
+        "train_loss": 1.4923661342412673,
+        "eval_loss": 1.4889956712722778,
+        "runtime_seconds": 1726.2161,
+        "peak_gpu_memory_gb": 6.843
+      },
+      "B3": {
+        "train_records": 542,
+        "validation_records": 58,
+        "train_loss": 0.21991907082059803,
+        "eval_loss": 0.391053706407547,
+        "runtime_seconds": 958.8149,
+        "peak_gpu_memory_gb": 3.199
+      },
+      "B4": {
+        "train_records": 519,
+        "validation_records": 58,
+        "train_loss": 0.20623042843280695,
+        "eval_loss": 0.417057603597641,
+        "runtime_seconds": 926.8955,
+        "peak_gpu_memory_gb": 3.113
+      },
+      "B5": {
+        "train_records": 1038,
+        "validation_records": 116,
+        "train_loss": 1.0409288571431086,
+        "eval_loss": 1.0098466873168945,
+        "runtime_seconds": 1937.208,
+        "peak_gpu_memory_gb": 5.765
+      }
+    },
+    "comparability_note": "Validation distributions differ: B3/B4 share IoT validation records; B5 validation is mixed IoT/general. The recorded losses are not directly comparable across all four runs."
+  }
+}
