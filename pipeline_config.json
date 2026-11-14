@@ -1,0 +1,26 @@
+{
+  "project": "IoT Technical Instruction Dataset",
+  "version": "1.0",
+  "frozen_corpus": "data/frozen/chunks_v1_frozen.jsonl",
+  "generation": {
+    "script": "scripts/60_generate_production_v2_resumable.py",
+    "output": "data/interim/production_generation_v2/dataset_v0_additional_v2_resumed.jsonl",
+    "passes_default": 1,
+    "delay_seconds_default": 15
+  },
+  "audit": {
+    "script": "scripts/61_audit_generation_v2.py",
+    "summary": "data/interim/production_generation_v2/audit_v1/audit_summary.json"
+  },
+  "judge": {
+    "script": "scripts/pipeline_judge.py",
+    "model": "openai/gpt-oss-120b",
+    "output_dir": "data/interim/production_generation_v2/pipeline_judge",
+    "delay_seconds_default": 20
+  },
+  "human_audit": {
+    "sample_size_default": 30,
+    "decision_values": ["ACCEPT", "REJECT"],
+    "approval_required": true
+  }
+}
