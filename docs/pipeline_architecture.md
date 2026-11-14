@@ -32,4 +32,4 @@
 
 These source scripts were recovered from project uploads and committed with their original filenames. Their original working-directory assumptions are preserved. The original data and source documents are not included.
 
-A separate `iot_dataset_pipeline_v1.zip` contains `pipeline.py`, `pipeline_config.json`, and `scripts/pipeline_judge.py`. It references a configured frozen corpus and script layout. Those orchestration files are not yet merged into this repository.
+The original orchestration files are now included: root-level `pipeline.py`, root-level `pipeline_config.json`, and `scripts/pipeline_judge.py`. The runner expects the frozen corpus under `data/frozen/` and the generated/interim data paths defined in the configuration; those data files are not bundled in the public repository.
